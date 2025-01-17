@@ -8,6 +8,10 @@
     "build": "tsc",
     "dev": "ts-node-dev --respawn securityScanner.ts"
   },
+  "repository": {
+      "type": "git",
+      "url": "git+https://github.com/adithya17122000/nilgirisecurity.git"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
