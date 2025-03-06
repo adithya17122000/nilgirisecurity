@@ -1,0 +1,22 @@
+{
+  "name": "nilgirisecurity",
+  "version": "1.0.0",
+  "description": "nilgiri-securityAutomated security testing using Feroxbuster and advanced techniques to detect vulnerabilities, enforce best practices, and generate AI-powered security reports.s",
+  "scripts": {
+    "security": "ts-node src/tests/main.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": ["nilgirisecurity", "nilgiri", "Tricon", "AI", "security", "Feroxbuster"],
+  "devDependencies": {
+    "@types/axios": "^0.9.36",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.13.4",
+    "@types/unzipper": "^0.10.10",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "ts-node": "^10.9.2"
+  }
+}

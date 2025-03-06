@@ -1,0 +1,34 @@
+name: Publish npm package
+
+on:
+  push:
+    branches:
+      - main  # Specify the branch you want to trigger the workflow for
+    # If you want to trigger on any branch, you can remove the "branches" filter
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout the repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '22.11.0'  # Specify the Node.js version you're using
+        registry-url: 'https://registry.npmjs.org/'  # npm registry URL
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Run tests (optional)
+      run: npm test  # Add this if you want to run tests before publishing
+
+    - name: Publish package to npm
+      run: |
+        npm version patch  # Increment the version, you can use 'major' or 'minor'
+        npm publish --access public  # Publish the package to npm
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Use your NPM_TOKEN secret to authenticate
