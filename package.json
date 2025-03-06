@@ -1,5 +1,5 @@
 {
-  "name": "nilgirisecurity",
+  "name": "create-nilgirisecurity",
   "version": "1.0.0",
   "description": "nilgiri-securityAutomated security testing using Feroxbuster and advanced techniques to detect vulnerabilities, enforce best practices, and generate AI-powered security reports.s",
   "scripts": {
