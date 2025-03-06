@@ -5,11 +5,11 @@
 <h1 align="center">Nilgiri Framework</h1>
 <p align="center">
     <!-- NPM badges -->
-    <!-- <a href="https://www.npmjs.com/package/nilgirisecurity"> -->
-        <!-- <img src="https://img.shields.io/npm/v/nilgirisecurity.svg" alt="npm version"> -->
+    <a href="https://www.npmjs.com/package/create-nilgirisecurity">
+        <img src="https://img.shields.io/npm/v/nilgirisecurity.svg" alt="npm version">
     </a>
-    <!-- <a href="https://www.npmjs.com/package/nilgirisecurity"> -->
-        <!-- <img src="https://img.shields.io/npm/dm/nilgirisecurity.svg" alt="npm downloads"> -->
+    <a href="https://www.npmjs.com/package/create-nilgirisecurity">
+        <img src="https://img.shields.io/npm/dm/nilgirisecurity.svg" alt="npm downloads">
     </a>
 </p>
 
@@ -45,7 +45,7 @@ Before we go to Setup Lets See what are the prerequisites
 **Install Depencency**:
 
    ```bash
-   npm install nilgirisecurity --save -d
+   npm install create-nilgirisecurity --save -d
    ```
 
 ### Parameters
