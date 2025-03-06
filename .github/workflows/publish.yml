@@ -23,12 +23,6 @@ jobs:
     - name: Install dependencies
       run: npm install
 
-    - name: Run tests (optional)
-      run: npm test  # Add this if you want to run tests before publishing
-
     - name: Publish package to npm
-      run: |
-        npm version patch  # Increment the version, you can use 'major' or 'minor'
-        npm publish --access public  # Publish the package to npm
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}  # Use your NPM_TOKEN secret to authenticate
